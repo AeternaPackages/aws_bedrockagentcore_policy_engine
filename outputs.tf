@@ -1,9 +1,4 @@
 # --- aws_bedrockagentcore_policy_engine ---
-output "bedrockagentcore_policy_engines_id" {
-  description = "Map of id values across all bedrockagentcore_policy_engines, keyed the same as var.bedrockagentcore_policy_engines"
-  value       = module.bedrockagentcore_policy_engines.bedrockagentcore_policy_engines_id
-}
-
 output "bedrockagentcore_policy_engines_description" {
   description = "Map of description values across all bedrockagentcore_policy_engines, keyed the same as var.bedrockagentcore_policy_engines"
   value       = module.bedrockagentcore_policy_engines.bedrockagentcore_policy_engines_description
@@ -45,11 +40,6 @@ output "bedrockagentcore_policy_engines_tags_all" {
 }
 
 # --- aws_bedrockagentcore_policy ---
-output "bedrockagentcore_policies_id" {
-  description = "Map of id values across all bedrockagentcore_policies, keyed the same as var.bedrockagentcore_policies"
-  value       = module.bedrockagentcore_policies.bedrockagentcore_policies_id
-}
-
 output "bedrockagentcore_policies_definition" {
   description = "Map of definition values across all bedrockagentcore_policies, keyed the same as var.bedrockagentcore_policies"
   value       = module.bedrockagentcore_policies.bedrockagentcore_policies_definition
