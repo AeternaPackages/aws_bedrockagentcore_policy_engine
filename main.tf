@@ -5,7 +5,7 @@ locals {
     for k1, v1 in var.bedrockagentcore_policy_engines : {
       for k2, v2 in coalesce(v1.bedrockagentcore_policies, {}) :
       "${k1}/${k2}" => merge(v2, {
-        policy_engine_id = module.bedrockagentcore_policy_engines.bedrockagentcore_policy_engines_id["${k1}"]
+        policy_engine_id = module.bedrockagentcore_policy_engines.bedrockagentcore_policy_engines_policy_engine_id["${k1}"]
       })
     }
   ]...)
